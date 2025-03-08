@@ -1,0 +1,45 @@
+h3 {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filters label {
+    font-weight: bold;
+    margin-right: 8px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.filters input,
+.filters select {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 120px;
+}
+
+@media (max-width: 600px) {
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .filters input,
+    .filters select {
+        width: 100%;
+    }
+}
