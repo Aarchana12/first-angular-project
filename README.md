@@ -32,28 +32,6 @@ This project simulates a simple *Company Website* with the following features:
 
 ---
 
-## 📂 Folder Structure
-
-
-src/
-├── app/
-│   ├── common/            # Shared components like menu bar
-│   ├── pages/              # Main pages - Home, Projects, About, Contacts
-│   │   ├── home/
-│   │   ├── projects/
-│   │   ├── about/
-│   │   └── contacts/
-│   ├── model/              # Data models for project, service, contact
-│   ├── services/           # Api services (if applicable)
-│   ├── data/                # Static data (if used)
-│   └── app-routing.module.ts
-│   └── app.component.ts
-│   └── app.module.ts
-│   └── images/              # Static images for UI
-
-
----
-
 ## 💻 How to Run
 
 1. Clone the repository:
