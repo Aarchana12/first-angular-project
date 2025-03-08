@@ -1,51 +1,96 @@
-#Routing
+# First Angular Project - Tech Mahindra Training
 
-/
-/app
-/about
+This is a basic Angular project developed as part of the *Tech Mahindra Full Stack Training Program*. The project demonstrates essential Angular concepts such as component communication, service usage, routing, and forms.
 
-top level routes, root leve
+---
 
-/app/module1
-/app/feature2  
+## 📌 Project Overview
 
-child routes
+This project simulates a simple *Company Website* with the following features:
 
-top level routing -> RouterModule.forRoot()
-child level routing -> RouterModule.forChildren()
+✅ *Home Page* - Overview of the company and its services  
+✅ *Projects Page* - Listing of company projects  
+✅ *About Page* - Information about the company  
+✅ *Contact Page* - Inquiry form to contact the company  
+
+---
+
+## 🚀 Key Features
+
+- *Dynamic Project Listing:* Projects are rendered dynamically using Angular components.
+- *Enquiry Form:* Form with basic validation (name, email, message).
+- *Reusable Components:* Menu Bar, Service Cards, Contact Items.
+- *Routing:* Page navigation handled via Angular Router.
+- *Responsive Design:* Basic responsive adjustments using CSS.
+
+---
+
+## 🛠️ Tech Stack
+
+- *Frontend:* Angular 17, TypeScript
+- *Styling:* CSS3, Bootstrap
+
+---
+
+## 📂 Folder Structure
 
 
-### Services
+src/
+├── app/
+│   ├── common/            # Shared components like menu bar
+│   ├── pages/              # Main pages - Home, Projects, About, Contacts
+│   │   ├── home/
+│   │   ├── projects/
+│   │   ├── about/
+│   │   └── contacts/
+│   ├── model/              # Data models for project, service, contact
+│   ├── services/           # Api services (if applicable)
+│   ├── data/                # Static data (if used)
+│   └── app-routing.module.ts
+│   └── app.component.ts
+│   └── app.module.ts
+│   └── images/              # Static images for UI
 
-A Service is angular future which is basically a class
-with functions that could be used reusably across multiple
-components
 
-in other words a service provides reusable features to multiple components
+---
 
-A service need to be injected in to the component in order to use it
+## 💻 How to Run
 
-we follow constructor inject 
+1. Clone the repository:
+    bash
+    git clone https://github.com/Aarchana12/first-angular-project.git
+    
 
-By default services are singleton (everywhere if you inject
-you will get same object)
+2. Move into the project folder:
+    bash
+    cd first-angular-project
+    
 
-but if you want a different object that could also be done
+3. Install dependencies:
+    bash
+    npm install
+    
 
+4. Run the application:
+    bash
+    ng serve
+    
 
-#### HttpClient Module
+5. Open in browser:
+    
+    http://localhost:4200
+    
 
-##### HttpClient service 
+---
 
-using this service we can call api using get,post,put,delete....methods
+## ✨ Author
 
-and all of this methods return object of type Observable
+*Aarchana Nichani*  
+[LinkedIn](https://www.linkedin.com/in/aarchana-nichani/)  
+[GitHub](https://github.com/Aarchana12)
 
-### Observable
+---
 
-In reactive programming(asynchronous coding), Observable is
-an object which listens to responses and process it as an when
-the original function sends it 
+## 🌟 Note
 
-this is used for processing logic that requires time and where
-data cannot be returned immediatly
+This is a beginner-level project designed to practice Angular basics. The structure and features will evolve as my skills grow
